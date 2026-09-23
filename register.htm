@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ST AUGUSTINE INTERNATIONAL SCHOOL - Register</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">my website</div>
+      <ul class="nav-links">
+        <li><a href="home.htm">Home</a></li>
+        <li><a href="about.htm">About</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+        <li><a href="index.htm">Main Page</a></li>
+      </ul>
+    </nav>
+    <div class="register-container">
+      <section class="register-section">
+        <h2>STUDENT REGISTRATION FORM</h2>
+        <h3>St Augustine International School Student Registration</h3>
+        <p>
+          Please fill out the form below to register as a student at St
+          Augustine International School. All fields are required.
+        </p>
+        <form action="register.php" method="POST">
+          <label for="username">Full Name:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            placeholder="juliocity"
+          />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="grade">Grade:</label>
+          <select id="grade" name="grade" required>
+            <option value="">Select grade</option>
+            <option value="grade 1">Grade 1</option>
+            <option value="grade 2">Grade 2</option>
+            <option value="grade 3">Grade 3</option>
+          </select>
+
+          <label for="parent_name">Parent/Guardian Name:</label>
+          <input
+            type="text"
+            id="parent_name"
+            name="parent_name"
+            required
+            placeholder="Mary"
+          />
+
+          <label for="parent_contact">Parent/Guardian Contact Number:</label>
+          <input
+            type="tel"
+            id="parent_contact"
+            name="parent_contact"
+            required
+            placeholder="0346483689"
+          />
+
+          <label for="parent_email">Parent/Guardian Email:</label>
+          <input
+            type="email"
+            id="parent_email"
+            name="parent_email"
+            required
+            placeholder="john@example.com"
+          />
+
+          <label for="password">Personal Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit" class="btn-register">Register</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
