@@ -1,38 +1,11 @@
 * {
     box-sizing: border-box;
 }
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: lightgreen;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #222;
-    background-attachment: fixed;
-    animation: bodySlider 15s infinite ease-in-out;
-}
 .main-page-content{
     min-height:200vh;
     box-sizing:border-box;
     padding:20px;
 }
-@keyframes bodySlider{
-    0%,28%{
-        background-image: url('images/julio4.jpg');
-    }
-    33%,61%{
-        background-image: url('images/julio5.jpg');
-    }
-    66%,95%{
-        background-image: url('images/julio6.jpg');
-    }
-    100%{
-        background-image:url('images/julio4.jpg') ;
-    }
-}
-
 body::after {
     content: "";
     position: fixed;
@@ -163,22 +136,28 @@ footer{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:10px 20px;
+    padding: 40px 40px;
     background:  #2d6a4f;
     color:#fff;
     position:relative;
     z-index:1;
+    height: 140px;
 }
 .nav-links{
     display:flex;
     list-style:none;
-    gap:20px;
+    gap:35px;
     margin:0;
     padding:0;
+    list-style:none;
 }
 .nav-links a{
     color:#fff;
     text-decoration:none;
+    font-weight:bold;
+    font-size: 16px;
+    text-transform:uppercase;
+    letter-spacing:1px;
 }
 .nav-links a:hover{
     text-decoration:underline;
