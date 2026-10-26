@@ -93,45 +93,6 @@ body::after {
 .school-timetable tr:nth-child(even) {
     background: rgba(45, 106, 79, 0.08);
 }
-
-.site-footer {
-    display: grid;
-    gap: 16px;
-    justify-items: center;
-}
-footer{
-    height: 200vh;
-    background:white;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-}
-
-.footer-links a,
-.footer-image-link {
-    color: #2d6a4f;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.footer-image-link img {
-    max-width: 220px;
-    width: 100%;
-    border-radius: 12px;
-}
-
-@media screen and (min-width: 900px) {
-    .page-container {
-        grid-template-columns: 1.5fr 1fr;
-    }
-}
 .navbar{
     display:flex;
     justify-content:space-between;
@@ -268,3 +229,24 @@ button:hover{
 .registration-card .btn-register:hover{
     background:#1a1a1a;
 }
+
+/* FIX campus images */
+.ttile, .rtile, .stile {overflow:hidden; position:relative; background:#eee;}
+.ttile img, .rtile img, .stile img {
+  width:100% !important; 
+  height:100% !important; 
+  object-fit:cover !important; 
+  object-position:center center !important;
+  display:block !important;
+  opacity:1 !important;
+  visibility:visible !important;
+}
+.ttile {height:250px;}
+.rtile {height:200px;}
+.stile {height:300px;}
+@media(min-width:768px){
+  .ttile{height:320px;}
+  .rtile{height:260px;}
+  .stile{height:400px;}
+}
+
